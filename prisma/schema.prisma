@@ -1,0 +1,44 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = "mysql://root:teste@localhost:3306/debateshabitacao"
+}
+
+model Projeto {
+  id                    Int     @id @default(autoincrement())
+  nome_oficial          String
+  favorito              Boolean
+  endereco              String?
+  cep                   String?
+  cidade                String?
+  estado                String?
+  pais                  String?
+  autor                 String?
+  ano                   String?
+  executor              String?
+  ano_da_construcao     String?
+  area_do_terreno       String?
+  area_construida       String?
+  apartamentos          String?
+  numero_de_pavimentos  String?
+  subsolo               String?
+  elevadores            String?
+  paisagismo            String?
+  obras_de_arte         String?
+  proprietario_original String?
+  fonte                 String?
+  programa              String?
+
+  imagens Imagem[]
+}
+
+model Imagem {
+  id        Int      @id @default(autoincrement())
+  name      String?
+  file      String?
+  projeto   Projeto? @relation(fields: [projetoId], references: [id])
+  projetoId Int?
+}
