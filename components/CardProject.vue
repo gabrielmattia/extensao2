@@ -30,11 +30,12 @@
       type: String,
     },
   })
+ 
 </script>
 
 <template>
   <div class="card-wrapper">
-    <NuxtLink to="#">
+    <NuxtLink :to="`/p/${projectId}`">
       <!-- to="`/projetos/${projectId}`" -->
       <div class="card-model">
         <div class="card-content">

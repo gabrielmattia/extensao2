@@ -29,8 +29,8 @@ model Projeto {
   paisagismo            String?
   obras_de_arte         String?
   proprietario_original String?
-  fonte                 String?
-  programa              String?
+  fonte                 String? @db.Text()
+  programa              String? @db.Text()
 
   imagens Imagem[]
 }

@@ -9,7 +9,12 @@ export default defineNuxtConfig({
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-  modules: ['@nuxt/image'],
+  modules: ['@nuxt/image', '@nuxtjs/tailwindcss'],
+  colorMode: {
+    preference: 'business', // default theme
+    dataValue: 'theme', // activate data-theme in <html> tag
+    classSuffix: '',
+  },
   css: ['~/assets/main.css'],
   postcss: {
     plugins: {

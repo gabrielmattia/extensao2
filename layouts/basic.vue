@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+
+</script>
 
 <template>
   <HeaderComponent />
@@ -11,7 +13,7 @@
 </template>
 
 <style scoped>
-  .layout-wrapper {
-    @apply container mx-auto p-8 min-h-[80vh];
-  }
+.layout-wrapper {
+  @apply container mx-auto p-8 min-h-[80vh];
+}
 </style>
