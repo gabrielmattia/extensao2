@@ -1,5 +1,13 @@
 <template>
-  <div>
+<NuxtLayout name="basic">
+    <template #main-content>
+      <div class="text-center">
+        <h3>Página em construção...</h3>
+      </div>
+    </template>
+  </NuxtLayout>
+
+  <!-- <div>
     <p v-if="pending">
       <span class="loading"></span>
     </p>
@@ -17,7 +25,7 @@
       </button>
       <button @click="deletePost(article.id)">Delete</button>
     </main>
-  </div>
+  </div> -->
 </template>
 
 <script setup>
