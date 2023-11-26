@@ -12,6 +12,13 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/image',
   ],
+  css: ['~/assets/main.css'],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
   image: {
     // Options
   },
