@@ -19,7 +19,6 @@
   --divider-secondary-light: rgba(84, 84, 84, 0.48);
 }
 
-
 /* semantic color variables for this project */
 :root {
   --color-text-base: var(--color-text);
@@ -27,12 +26,12 @@
   --color-background-base: var(--color-fill);
   --color-background-soft: var(--color-white-soft);
   /* --color-background-mute: var(--color-white-mute); */
-  
+
   --color-border: var(--divider-primary-light);
   --color-border-hover: var(--divider-primary);
-  
+
   --bg-btn-secondary: var(--color-fill);
-  --bd-color-btn-secondary-focus: var(--divider-secondary)
+  --bd-color-btn-secondary-focus: var(--divider-secondary);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -49,7 +48,6 @@
     */
   }
 }
-
 
 *,
 *::before,

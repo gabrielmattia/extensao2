@@ -1,7 +1,7 @@
 confifura seu .env com DATABASE_URL='mysql://USER:PASSWORD@HOST:PORT/DATABASE'
 
 comandos
-npm install 
+npm install
 
 npx prisma migrate dev --name init
 

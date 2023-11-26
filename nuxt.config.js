@@ -9,9 +9,7 @@ export default defineNuxtConfig({
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-  modules: [
-    '@nuxt/image',
-  ],
+  modules: ['@nuxt/image'],
   css: ['~/assets/main.css'],
   postcss: {
     plugins: {

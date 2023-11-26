@@ -7,31 +7,33 @@
       </p>
       <p v-else-if="error">Error while fetching feed 💔</p>
       <div v-else>
-        <Post class="post" v-for="projeto in projetoFavorito" :key="projeto.id" v-bind:projeto="projeto" />
+        <Post
+          class="post"
+          v-for="projeto in projetoFavorito"
+          :key="projeto.id"
+          v-bind:projeto="projeto"
+        />
       </div>
     </main>
   </div>
 </template>
 
 <script setup>
-
-const { data: projetoFavorito, error, pending } = await useFetch('/api/projetosFavoritos')
-
-
+  const { data: projetoFavorito, error, pending } = await useFetch('/api/projetosFavoritos')
 </script>
 
 <style>
-.post {
-  background: white;
-  transition: box-shadow 0.1s ease-in;
-}
+  .post {
+    background: white;
+    transition: box-shadow 0.1s ease-in;
+  }
 
-.post:hover {
-  box-shadow: 1px 1px 3px #aaa;
-}
+  .post:hover {
+    box-shadow: 1px 1px 3px #aaa;
+  }
 
-.post,
-.post {
-  margin-top: 2rem;
-}
+  .post,
+  .post {
+    margin-top: 2rem;
+  }
 </style>
