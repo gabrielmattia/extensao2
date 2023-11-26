@@ -1,39 +1,46 @@
+<script setup></script>
+
 <template>
-  <div class="page">
-    <h1>My Blog</h1>
-    <main>
-      <p v-if="pending">
-        <span class="loading"></span>
-      </p>
-      <p v-else-if="error">Error while fetching feed 💔</p>
-      <div v-else>
-        <Post
-          class="post"
-          v-for="projeto in projetoFavorito"
-          :key="projeto.id"
-          v-bind:projeto="projeto"
-        />
+  <NuxtLayout name="basic">
+    <template #main-content>
+      <div class="presentation-wrapper">
+        <div class="pb-4 lg:max-h-[90%]">
+          <img
+            src="../assets/images/cityvogue.jpg"
+            alt="Edificio Residencial City Vogue"
+            class="w-full h-full max-w-full rounded-lg"
+          />
+        </div>
+        <div class="presentation">
+          <h2>Apresentação</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+        </div>
       </div>
-    </main>
-  </div>
+      <MainProjects />
+    </template>
+  </NuxtLayout>
 </template>
 
-<script setup>
-  const { data: projetoFavorito, error, pending } = await useFetch('/api/projetosFavoritos')
-</script>
-
-<style>
-  .post {
-    background: white;
-    transition: box-shadow 0.1s ease-in;
+<style scoped>
+  .presentation-wrapper {
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-6 py-8;
   }
-
-  .post:hover {
-    box-shadow: 1px 1px 3px #aaa;
-  }
-
-  .post,
-  .post {
-    margin-top: 2rem;
+  .presentation p {
+    @apply py-2;
   }
 </style>
