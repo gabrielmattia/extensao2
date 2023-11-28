@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-  modules: ['@nuxt/image', '@nuxtjs/tailwindcss'],
+  modules: ['@nuxt/image', '@nuxtjs/tailwindcss','vue3-carousel-nuxt'],
   colorMode: {
     preference: 'business', // default theme
     dataValue: 'theme', // activate data-theme in <html> tag
@@ -26,3 +26,4 @@ export default defineNuxtConfig({
     // Options
   },
 })
+

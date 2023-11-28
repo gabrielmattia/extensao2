@@ -8,3 +8,5 @@ npx prisma migrate dev --name init
 npx prisma db seed
 
 npm run dev
+
+em produção mudar a url do banco de dados em schama.prisma
