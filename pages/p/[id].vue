@@ -1,18 +1,37 @@
+
+<script setup>
+  const route = useRoute()
+
+  const { data: projeto, pending } = await useFetch(() => `/api/projetos/${route.params.id}`)
+</script>
 <template>
-  <LoadingIcon v-if="isLoading" />
-  <div v-else class="container mx-auto my-8">
-    <BtnGoBack />
+  <!-- <LoadingIcon v-if="pending" /> -->
+  <!-- v-else -->
+  <div
+    class="container mx-auto my-8"
+  >
+    <ButtonGoBack />
     <div class="content-wrapper flex flex-col items-center">
       <div class="carousel carousel-center max-w-[450px] space-x-4 bg-transparent rounded-box items-center">
-        <div class="carousel-item w-full items-center justify-center" v-for="(image, index) in projeto.imagens"
-          :key="index">
-          <img :src="`/../${image.file}`" :alt="`${image.name}`" class="rounded-lg" />
+        <div
+          class="carousel-item w-full items-center justify-center"
+          v-for="(image, index) in projeto.imagens"
+          :key="index"
+        >
+          <img
+            :src="`/../${image.file}`"
+            :alt="`${image.name}`"
+            class="rounded-lg"
+          />
         </div>
       </div>
 
       <div class="flex items-center py-8">
         <h3 class="self-baseline capitalize">{{ projeto?.nome_oficial }}</h3>
-        <div v-if="projeto?.ano" class="border-1 w-[5px] h-[6px] bg-slate-700 m-2"></div>
+        <div
+          v-if="projeto?.ano"
+          class="border-1 w-[5px] h-[6px] bg-slate-700 m-2"
+        ></div>
         <h4 class="self-baseline text-skin-black-mute font-medium">{{ projeto?.ano }}</h4>
       </div>
 
@@ -69,26 +88,16 @@
   </div>
 </template>
 
-<script setup>
-const route = useRoute()
-
-const { data: projeto, isLoading } = await useFetch(() => `/api/projetos/${route.params.id}`)
-
-
-
-</script>
-
-
 <style scoped>
-span {
-  @apply tracking-widest text-base uppercase;
-}
+  span {
+    @apply tracking-widest text-base uppercase;
+  }
 
-p {
-  @apply text-sm leading-4;
-}
+  p {
+    @apply text-sm leading-4;
+  }
 
-p:not(:first-of-type) {
-  @apply mb-4;
-}
+  p:not(:first-of-type) {
+    @apply mb-4;
+  }
 </style>
