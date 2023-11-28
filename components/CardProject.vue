@@ -36,7 +36,6 @@
 <template>
   <div class="card-wrapper">
     <NuxtLink :to="`/p/${projectId}`">
-      <!-- to="`/projetos/${projectId}`" -->
       <div class="card-model">
         <div class="card-content">
           <div class="card-image">

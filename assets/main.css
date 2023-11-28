@@ -4,7 +4,7 @@
 
 :root {
   --color-fill: #ffffff;
-  --color-text: #fafafaea;
+  --color-text: #000000;
 
   --color-black: #181818;
   --color-white-soft: #fbf6f3;
@@ -42,10 +42,10 @@
 
     --color-border: var(--divider-secondary-light);
     --color-border-hover: var(--divider-secondary);
-    /* 
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text-base: var(--vt-c-text-dark-2);
-    */
+
+    --color-text-base: #b7b7b7;
+    --color-heading: #b65506;
+    --color-link: rgb(31, 139, 213);
   }
 }
 
