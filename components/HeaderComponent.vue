@@ -6,7 +6,7 @@
       <div class="flex flex-col items-center sm:flex-row sm:items-baseline">
         <!-- <h1 class="sm:me-2">PAHC</h1> -->
         <h1 class="text-center sm:text-left">Projetos Arquitetônicos de Habitação Coletiva</h1>
-      </div>
+              </div>
 
       <nav class="join">
         <NuxtLink
@@ -51,7 +51,7 @@
   }
 
   nav {
-    @apply w-full flex justify-center lg:block pt-4;
+    @apply w-full flex justify-center md:block pt-4;
   }
 
   .bg-ig-logo {

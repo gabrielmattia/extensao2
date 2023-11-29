@@ -31,7 +31,7 @@
     border-black
     bg-skin-btn-secondary
     bg-back-arrow
-    bg-center bg-no-repeat p-5 mb-4
+    bg-center bg-no-repeat p-5
     md:hover:bg-skin-btn-secondary-hover
     focus:border-btn-secondary-focus;
   }

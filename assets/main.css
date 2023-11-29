@@ -89,11 +89,11 @@ h1 {
 }
 
 h2 {
-  @apply text-[18px] md:text-[30px] font-semibold leading-[34px];
+  @apply text-[20px] md:text-[30px] font-semibold leading-[34px];
 }
 
 h3 {
-  @apply text-[20px] font-semibold leading-[24px];
+  @apply text-[18px] md:text-[20px] font-semibold leading-[24px];
 }
 
 p {
