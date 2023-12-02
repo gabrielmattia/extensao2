@@ -115,3 +115,12 @@ label {
 span {
   @apply text-[12px] font-semibold leading-[14px];
 }
+
+.carousel__icon{
+  color:  var( --color-text-base);
+}
+
+
+.carousel__pagination-button{
+  @apply bg-white
+}

@@ -30,6 +30,10 @@
         <p>Amanda Vieira Costa</p>
         <p>Wellington Gabriel de Mattia</p>
         <p>Bruna Costa Dias</p>
+        <p>Bianca Batista da Silva</p>
+        <p>Lays de Souza Alagues</p>
+        <p>Lara Rodrigues Martinez</p>
+
       </div>
     </template>
   </NuxtLayout>
