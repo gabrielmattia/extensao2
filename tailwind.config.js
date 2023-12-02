@@ -9,6 +9,9 @@ module.exports = {
     './error.vue',
   ],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       colors: {
         skin: {

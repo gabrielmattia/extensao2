@@ -85,19 +85,19 @@ main {
 }
 
 h1 {
-  @apply text-[21px] leading-[34px] md:text-[40px] font-semibold md:leading-[48px];
+  @apply text-[21px] leading-[28px] md:text-[40px] font-semibold md:leading-[48px];
 }
 
 h2 {
-  @apply text-[20px] md:text-[30px] font-semibold leading-[34px];
+  @apply text-[20px] md:text-[30px] font-semibold leading-[24px];
 }
 
 h3 {
-  @apply text-[18px] md:text-[20px] font-semibold leading-[24px];
+  @apply text-[18px] md:text-[20px] font-semibold leading-[22px];
 }
 
 p {
-  @apply text-[16px] font-[400] leading-[24px];
+  @apply text-[14px] font-[400] leading-[20px];
 }
 
 a {
@@ -117,10 +117,10 @@ span {
 }
 
 .carousel__icon{
-  color:  var( --color-text-base);
+  color: var( --color-text-base);
 }
 
 
 .carousel__pagination-button{
-  @apply bg-white
+  @apply bg-white;
 }

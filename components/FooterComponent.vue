@@ -53,7 +53,7 @@
 
 <style scoped>
   .footer {
-    @apply flex p-4 md:grid md:place-content-center lg:p-10;
+    @apply justify-center p-4 md:grid md:place-content-center;
   }
 
   a {

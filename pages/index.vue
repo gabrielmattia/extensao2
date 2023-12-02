@@ -4,31 +4,23 @@
   <NuxtLayout name="basic">
     <template #main-content>
       <div class="presentation-wrapper">
-        <div class="pb-4 lg:max-h-[90%]">
+        <div class="">
           <img
-            src="../assets/images/cityvogue.jpg"
+            src="../assets/images/cityvogue_img1.jpg"
             alt="Edificio Residencial City Vogue"
             class="w-full h-full max-w-full rounded-lg"
           />
         </div>
-        <div class="presentation">
-          <h2>Apresentação</h2>
-          <p>
-            Debate e publicação de projetos arquitetônicos de habitação coletiva realizados no Brasil.
-          </p>
-
+        <div class="">
+          <MainProjects />
         </div>
       </div>
-      <MainProjects />
     </template>
   </NuxtLayout>
 </template>
 
 <style scoped>
   .presentation-wrapper {
-    @apply grid grid-cols-1 lg:grid-cols-2 gap-6 py-8;
-  }
-  .presentation p {
-    @apply py-2;
+    @apply grid grid-cols-1 xl:grid-cols-2 gap-5 content-center;
   }
 </style>

@@ -27,6 +27,6 @@
 
 <style scoped>
   .welcome-content {
-    @apply w-full grid grid-cols-1 md:grid-cols-custom-2 lg:grid-cols-custom-3 xl:grid-cols-custom-4 2xl:grid-cols-custom-5 place-content-between justify-items-center gap-4;
+    @apply w-full grid grid-cols-1 md:grid-cols-custom-2 justify-items-center md:place-content-center gap-4;
   }
 </style>
