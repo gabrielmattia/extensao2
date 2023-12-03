@@ -3,7 +3,7 @@
 <template>
   <footer class="footer bg-neutral text-neutral-content">
     <div>
-      <p class="footer-title opacity-90">Realização:</p>
+      <p class="footer-title opacity-90 m-0">Realização:</p>
       <div class="flex items-center justify-center gap-5 md:gap-8">
         <a
           href="https://www.ufms.br/"
@@ -14,8 +14,8 @@
             alt="Universidade Federal de Mato Grosso do Sul logo"
             class="rounded-lg"
             src="@/assets/images/ufms-logo.png"
-            width="70"
-            height="70"
+            width="50"
+            height="50"
           />
         </a>
 
@@ -23,14 +23,15 @@
           href="https://www.facom.ufms.br/"
           target="_blank"
           rel="noopener noreferrer"
+          class="flex flex-col items-center"
         >
           <img
             alt="Faculdade de Computação logo"
             src="@/assets/images/grafo_facom.png"
-            width="80"
-            height="80"
+            width="50"
+            height="50"
           />
-          <p class="text-xs font-semibold pt-1">FACOM-UFMS</p>
+          <p class="text-[9px] font-semibold">FACOM-UFMS</p>
         </a>
 
         <a
@@ -42,8 +43,8 @@
             class="rounded-md"
             alt="Curso de Arquitetura e Urbanismo logo"
             src="@/assets/images/cau-logo.jpeg"
-            width="150"
-            height="150"
+            width="90"
+            height="90"
           />
         </a>
       </div>
