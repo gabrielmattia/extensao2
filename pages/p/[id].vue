@@ -1,7 +1,7 @@
 <script setup>
 import { defineComponent } from 'vue'
 import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
-
+import DialogImage from '@/components/DialogImage.vue'
 import 'vue3-carousel/dist/carousel.css'
 
 defineComponent({
@@ -25,7 +25,8 @@ const { data: projeto, pending, error } = await useFetch(() => `/api/projetos/${
         <div class="content-wrapper flex flex-col items-center">
           <Carousel class="flex-col max-w-[550px] space-x-4 bg-transparent rounded-box items-center">
             <Slide v-for="slide in projeto.imagens" :key="slide">
-              <NuxtImg :src="`${slide.file}`" :alt="`${slide.name}`" class="carousel__item rounded-lg" />
+              <NuxtImg :src="`${slide.file}`" :alt="`${slide.name}`" class=" btn carousel__item rounded-lg"
+                onclick="my_modal_4.showModal()" />
             </Slide>
 
             <template #addons>
@@ -33,10 +34,10 @@ const { data: projeto, pending, error } = await useFetch(() => `/api/projetos/${
               <Pagination />
             </template>
           </Carousel>
+          <DialogImage :imagens=projeto.imagens />
         </div>
 
       </div>
-
       <div class="container mx-auto my-8">
         <div class="content-wrapper flex flex-col items-center">
           <div class="carousel carousel-center max-w-[450px] space-x-4 bg-transparent rounded-box items-center">
@@ -127,6 +128,4 @@ p:not(:first-of-type) {
 .carousel__item {
   @apply min-h-[224px] max-h-[370px] w-full max-w-[580px] bg-transparent rounded-lg;
 }
-
-
 </style>
