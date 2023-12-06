@@ -25,7 +25,7 @@ const { data: projeto, pending, error } = await useFetch(() => `/api/projetos/${
         <div class="content-wrapper flex flex-col items-center">
           <Carousel class="flex-col max-w-[550px] space-x-4 bg-transparent rounded-box items-center">
             <Slide v-for="slide in projeto.imagens" :key="slide">
-              <NuxtImg :src="`${slide.file}`" :alt="`${slide.name}`" class=" btn carousel__item rounded-lg"
+              <NuxtImg :src="`${slide.file}`" :alt="`${slide.name}`" class="carousel__item rounded-lg cursor-pointer"
                 onclick="my_modal_4.showModal()" />
             </Slide>
 
@@ -126,6 +126,6 @@ p:not(:first-of-type) {
 }
 
 .carousel__item {
-  @apply min-h-[224px] max-h-[370px] w-full max-w-[580px] bg-transparent rounded-lg;
+  @apply min-h-[224px] max-h-[430px] w-full max-w-[580px] bg-transparent rounded-lg;
 }
 </style>

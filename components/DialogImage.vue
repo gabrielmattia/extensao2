@@ -66,6 +66,9 @@ p:not(:first-of-type) {
 }
 
 .carousel__item {
-  @apply min-h-[224px] max-h-[370px] w-full max-w-[580px] bg-transparent rounded-lg;
+  @apply min-h-[224px] 
+  /* max-h-[430px]
+   w-full max-w-[580px] */
+    bg-transparent rounded-lg;
 }
 </style>

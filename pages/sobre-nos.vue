@@ -33,7 +33,9 @@
         <p>Bianca Batista da Silva</p>
         <p>Lays de Souza Alagues</p>
         <p>Lara Rodrigues Martinez</p>
-
+        <p>Livia Tinoco da Silva Furtado</p>
+        <p>Yngrid Oliveira do Carmo</p>
+        <p>Marlon Pecantet de Assis</p>
       </div>
     </template>
   </NuxtLayout>

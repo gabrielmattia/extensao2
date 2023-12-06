@@ -47,7 +47,7 @@
 
           <div class="card-box-info">
             <h3>{{ projectTitle }} {{ year ? `(${year})` : '' }}</h3>
-            <p class="text-sm">{{ author ? `${author}` : '' }}</p>
+            <p class="author-text">{{ author ? `${author}` : '' }}</p>
             <p class="text-xs">
               {{ country ? `${country} - ` : '' }}
               {{ city ? `${city}, ` : '' }}
@@ -61,6 +61,9 @@
 </template>
 
 <style scoped>
+  .author-text {
+    @apply text-sm max-w-full text-ellipsis overflow-hidden whitespace-nowrap;
+  }
   .card-wrapper {
     @apply min-h-[320px] max-h-[320px] min-w-[280px] max-w-[280px] rounded-lg border transition-all duration-300 ease-linear delay-0;
   }

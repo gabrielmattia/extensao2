@@ -1,6 +1,6 @@
 export const PROJECT_FILTER_OPTIONS = [
-  { id: 1, label: 'Nome', name: 'nome' },
-  { id: 2, label: 'Arquiteto', name: 'arquiteto' },
+  { id: 1, label: 'Nome do Edifício', name: 'nome' },
+  { id: 2, label: 'Autor do projeto', name: 'autor' },
   { id: 3, label: 'Localidade', name: 'localidade'},
 ]
 
