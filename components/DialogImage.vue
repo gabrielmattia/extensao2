@@ -1,24 +1,13 @@
 <template>
   <dialog id="my_modal_4" class="modal ">
-    <div class="modal-box w-11/12 max-w-5xl">
-      <div class="container mx-auto my-8">
-        <div class="content-wrapper flex flex-col items-center">
-          <Carousel class="flex-col space-x-4 bg-transparent rounded-box items-center">
-            <Slide v-for="slide in imagens" :key="slide">
-              <NuxtImg :src="`${slide.file}`" :alt="`${slide.name}`" class="carousel__item rounded-lg" />
-            </Slide>
+    <div class="container modal-box min-w-fit min-h-fit m-2">
+      <div class="images" v-viewer="{ movable: false }">
+       
 
-            <template #addons>
-              <Navigation v-if="imagens.length > 1" />
-              <Pagination />
-            </template>
-          </Carousel>
-
-        </div>
       </div>
       <div class="modal-action">
         <form method="dialog">
-          <!-- if there is a button in form, it will close the modal -->
+
           <button class="btn">Close</button>
         </form>
       </div>
@@ -27,8 +16,12 @@
 </template>
 
 <script  setup>
-import { defineComponent } from 'vue'
+
 import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
+import { defineComponent } from 'vue'
+import 'viewerjs/dist/viewer.css'
+import { directive as viewer } from "v-viewer"
+
 
 import 'vue3-carousel/dist/carousel.css'
 defineProps({
@@ -45,6 +38,18 @@ defineComponent({
     Pagination,
     Navigation,
   },
+  directives: {
+    viewer: viewer({
+      debug: true
+    })
+  },
+  methods: {
+    show() {
+      const viewer = this.$el.querySelector('.images').$viewer
+      viewer.show()
+    }
+  }
+
 })
 </script>
 
@@ -66,9 +71,9 @@ p:not(:first-of-type) {
 }
 
 .carousel__item {
-  @apply min-h-[224px] 
+  @apply
   /* max-h-[430px]
    w-full max-w-[580px] */
-    bg-transparent rounded-lg;
+  bg-transparent rounded-lg;
 }
 </style>

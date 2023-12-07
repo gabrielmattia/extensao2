@@ -3,16 +3,30 @@ import { defineComponent } from 'vue'
 import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
 import DialogImage from '@/components/DialogImage.vue'
 import 'vue3-carousel/dist/carousel.css'
+import 'viewerjs/dist/viewer.css'
+import { directive as viewer } from "v-viewer"
 
 defineComponent({
-  name: 'Basic',
   components: {
     Carousel,
     Slide,
     Pagination,
     Navigation,
   },
+
 })
+import 'viewerjs/dist/viewer.css'
+
+const vViewer = viewer({
+  debug: false
+})
+const show = () => {
+  console.log('teste')
+  const viewer = document.querySelector('.images').$viewer
+  viewer.show()
+}
+
+
 const route = useRoute()
 const { data: projeto, pending, error } = await useFetch(() => `/api/projetos/${route.params.id}`)
 </script>
@@ -21,27 +35,36 @@ const { data: projeto, pending, error } = await useFetch(() => `/api/projetos/${
   <NuxtLayout v-else name="basic">
     <template #main-content>
       <ButtonGoBack />
-      <div class="container mx-auto my-8">
-        <div class="content-wrapper flex flex-col items-center">
-          <Carousel class="flex-col max-w-[550px] space-x-4 bg-transparent rounded-box items-center">
-            <Slide v-for="slide in projeto.imagens" :key="slide">
-              <NuxtImg :src="`${slide.file}`" :alt="`${slide.name}`" class="carousel__item rounded-lg cursor-pointer"
-                onclick="my_modal_4.showModal()" />
-            </Slide>
+      <div class="images" v-viewer="{ movable: true, rotatable: false, scalable: false, }">
+        <div class="container mx-auto my-8">
+          <div class="content-wrapper flex flex-col items-center">
+            <Carousel class="flex-col max-w-[550px] space-x-4 bg-transparent rounded-box items-center">
+              <Slide v-for=" slide  in  projeto.imagens " :key="slide">
+                <NuxtImg :src="`${slide.file}`" :alt="`${slide.name}`"
+                  class="carousel__item rounded-lg cursor-pointer" />
 
-            <template #addons>
-              <Navigation v-if="projeto?.imagens.length > 1" />
-              <Pagination />
-            </template>
-          </Carousel>
-          <DialogImage :imagens=projeto.imagens />
+
+                <!-- <button type="button" @click="show">Show</button>
+                <NuxtImg v-for="slide in projeto.imagens" :src="`${slide.file}`" :alt="`${slide.name}`"
+                class="carousel__item rounded-lg cursor-pointer" /> -->
+              </Slide>
+
+
+              <template #addons>
+                <Navigation v-if="projeto?.imagens.length > 1" />
+                <Pagination />
+              </template>
+            </Carousel>
+          </div>
+
+
         </div>
 
       </div>
       <div class="container mx-auto my-8">
         <div class="content-wrapper flex flex-col items-center">
           <div class="carousel carousel-center max-w-[450px] space-x-4 bg-transparent rounded-box items-center">
-            <div class="carousel-item w-full items-center justify-center" v-for="(image, index) in projeto.imagens"
+            <div class="carousel-item w-full items-center justify-center" v-for="( image, index ) in  projeto.imagens "
               :key="index"></div>
           </div>
           <div class="flex items-center py-8">
@@ -129,3 +152,5 @@ p:not(:first-of-type) {
   @apply min-h-[224px] max-h-[430px] w-full max-w-[580px] bg-transparent rounded-lg;
 }
 </style>
+
+

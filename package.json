@@ -16,6 +16,8 @@
     "@nuxtjs/color-mode": "^3.3.2",
     "@prisma/client": "5.6.0",
     "nuxt": "3.8.2",
+    "v-viewer": "^3.0.11",
+    "viewerjs": "^1.11.6",
     "vue3-carousel": "^0.3.1",
     "vue3-carousel-nuxt": "^1.1.0"
   },
