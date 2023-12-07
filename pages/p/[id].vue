@@ -1,54 +1,52 @@
 <script setup>
-import { defineComponent } from 'vue'
-import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
-import DialogImage from '@/components/DialogImage.vue'
-import 'vue3-carousel/dist/carousel.css'
-import 'viewerjs/dist/viewer.css'
-import { directive as viewer } from "v-viewer"
+  import { defineComponent } from 'vue'
+  import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
+  import 'vue3-carousel/dist/carousel.css'
+  import 'viewerjs/dist/viewer.css'
+  import { directive as viewer } from 'v-viewer'
 
-defineComponent({
-  components: {
-    Carousel,
-    Slide,
-    Pagination,
-    Navigation,
-  },
+  defineComponent({
+    components: {
+      Carousel,
+      Slide,
+      Pagination,
+      Navigation,
+    },
+  })
+  import 'viewerjs/dist/viewer.css'
 
-})
-import 'viewerjs/dist/viewer.css'
+  const vViewer = viewer({
+    debug: false,
+  })
 
-const vViewer = viewer({
-  debug: false
-})
-const show = () => {
-  console.log('teste')
-  const viewer = document.querySelector('.images').$viewer
-  viewer.show()
-}
-
-
-const route = useRoute()
-const { data: projeto, pending, error } = await useFetch(() => `/api/projetos/${route.params.id}`)
+  const route = useRoute()
+  const { data: projeto, pending, error } = await useFetch(() => `/api/projetos/${route.params.id}`)
 </script>
 <template>
   <p v-if="error">Erro ao tentar acessar o projeto 💔</p>
-  <NuxtLayout v-else name="basic">
+  <NuxtLayout
+    v-else
+    name="basic"
+  >
     <template #main-content>
       <ButtonGoBack />
-      <div class="images" v-viewer="{ movable: true, rotatable: false, scalable: false, }">
+      <div
+        class="images"
+        v-viewer="{ movable: true, rotatable: false, scalable: false }"
+      >
         <div class="container mx-auto my-8">
           <div class="content-wrapper flex flex-col items-center">
-            <Carousel class="flex-col max-w-[550px] space-x-4 bg-transparent rounded-box items-center">
-              <Slide v-for=" slide  in  projeto.imagens " :key="slide">
-                <NuxtImg :src="`${slide.file}`" :alt="`${slide.name}`"
-                  class="carousel__item rounded-lg cursor-pointer" />
-
-
-                <!-- <button type="button" @click="show">Show</button>
-                <NuxtImg v-for="slide in projeto.imagens" :src="`${slide.file}`" :alt="`${slide.name}`"
-                class="carousel__item rounded-lg cursor-pointer" /> -->
+            <Carousel class="flex-col bg-transparent rounded-box items-center">
+              <Slide
+                v-for="slide in projeto.imagens"
+                :key="slide"
+              >
+                <NuxtImg
+                  :src="`${slide.file}`"
+                  :alt="`${slide.name}`"
+                  class="carousel__item rounded-lg cursor-pointer"
+                />
               </Slide>
-
 
               <template #addons>
                 <Navigation v-if="projeto?.imagens.length > 1" />
@@ -56,20 +54,16 @@ const { data: projeto, pending, error } = await useFetch(() => `/api/projetos/${
               </template>
             </Carousel>
           </div>
-
-
         </div>
-
       </div>
       <div class="container mx-auto my-8">
         <div class="content-wrapper flex flex-col items-center">
-          <div class="carousel carousel-center max-w-[450px] space-x-4 bg-transparent rounded-box items-center">
-            <div class="carousel-item w-full items-center justify-center" v-for="( image, index ) in  projeto.imagens "
-              :key="index"></div>
-          </div>
-          <div class="flex items-center py-8">
+          <div class="flex items-center py-4">
             <h3 class="self-baseline capitalize">{{ projeto?.nome_oficial }}</h3>
-            <div v-if="projeto?.ano" class="border-1 w-[5px] h-[6px] bg-slate-700 m-2"></div>
+            <div
+              v-if="projeto?.ano"
+              class="border-1 w-[5px] h-[6px] bg-slate-700 m-2"
+            ></div>
             <h4 class="self-baseline text-skin-black-mute font-medium">{{ projeto?.ano }}</h4>
           </div>
 
@@ -132,25 +126,23 @@ const { data: projeto, pending, error } = await useFetch(() => `/api/projetos/${
 </template>
 
 <style scoped>
-span {
-  @apply tracking-widest text-base uppercase;
-}
+  span {
+    @apply tracking-widest text-base uppercase;
+  }
 
-p {
-  @apply text-sm leading-4 m-1;
-}
+  p {
+    @apply text-sm leading-4 m-1;
+  }
 
-p:not(:first-of-type) {
-  @apply mb-2;
-}
+  p:not(:first-of-type) {
+    @apply mb-2;
+  }
 
-.carousel {
-  @apply max-w-[80%] md:max-w-[60%];
-}
+  .carousel {
+    @apply max-w-[80%] md:max-w-[60%];
+  }
 
-.carousel__item {
-  @apply min-h-[224px] max-h-[430px] w-full max-w-[580px] bg-transparent rounded-lg;
-}
+  .carousel__item {
+    @apply min-h-[224px] max-h-[430px] w-full max-w-[580px] bg-transparent rounded-lg;
+  }
 </style>
-
-
