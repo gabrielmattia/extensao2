@@ -2977,12 +2977,12 @@ const data = [
     imagens: {
       create: [
         {
-          name: 'Lauro1',
-          file: 'Lauro1.png',
+          name: 'LAURO1',
+          file: 'LAURO1.png',
         },
         {
-          name: 'Lauro2',
-          file: 'Lauro2.png',
+          name: 'LAURO2',
+          file: 'LAURO2.png',
         },
       ],
     },
@@ -3137,32 +3137,32 @@ const data = [
     imagens: {
       create: [
         {
-          name: 'MC_Imagem1',
-          file: 'MC_Imagem1.png',
+          name: 'MC_imagem1',
+          file: 'MC_imagem1.png',
         },
         {
-          name: 'MC_Imagem2',
-          file: 'MC_Imagem2.png',
+          name: 'MC_imagem2',
+          file: 'MC_imagem2.png',
         },
         {
-          name: 'MC_Imagem3',
-          file: 'MC_Imagem3.png',
+          name: 'MC_imagem3',
+          file: 'MC_imagem3.png',
         },
         {
-          name: 'MC_Imagem4',
-          file: 'MC_Imagem4.png',
+          name: 'MC_imagem4',
+          file: 'MC_imagem4.png',
         },
         {
-          name: 'MC_Imagem4',
-          file: 'MC_Imagem4.png',
+          name: 'MC_imagem4',
+          file: 'MC_imagem4.png',
         },
         {
-          name: 'MC_Imagem5',
-          file: 'MC_Imagem5.png',
+          name: 'MC_imagem5',
+          file: 'MC_imagem5.png',
         },
         {
-          name: 'MC_Imagem6',
-          file: 'MC_Imagem6.png',
+          name: 'MC_imagem6',
+          file: 'MC_imagem6.png',
         },
       ],
     },
@@ -3192,28 +3192,28 @@ const data = [
     imagens: {
       create: [
         {
-          name: 'Arc_Imagem1',
-          file: 'Arc_Imagem1.png',
+          name: 'Arc_imagem1',
+          file: 'Arc_imagem1.png',
         },
         {
-          name: 'Arc_Imagem2',
-          file: 'Arc_Imagem2.png',
+          name: 'Arc_imagem2',
+          file: 'Arc_imagem2.png',
         },
         {
-          name: 'Arc_Imagem3',
-          file: 'Arc_Imagem3.png',
+          name: 'Arc_imagem3',
+          file: 'Arc_imagem3.png',
         },
         {
-          name: 'Arc_Imagem4',
-          file: 'Arc_Imagem4.png',
+          name: 'Arc_imagem4',
+          file: 'Arc_imagem4.png',
         },
         {
-          name: 'Arc_Imagem5',
-          file: 'Arc_Imagem5.png',
+          name: 'Arc_imagem5',
+          file: 'Arc_imagem5.png',
         },
         {
-          name: 'Arc_Imagem6',
-          file: 'Arc_Imagem6.png',
+          name: 'Arc_imagem6',
+          file: 'Arc_imagem6.png',
         },
       ],
     },
@@ -3244,24 +3244,24 @@ const data = [
     imagens: {
       create: [
         {
-          name: 'JI_Imagem1',
-          file: 'JI_Imagem1.png',
+          name: 'JI_imagem1',
+          file: 'JI_imagem1.png',
         },
         {
-          name: 'JI_Imagem2',
-          file: 'JI_Imagem2.png',
+          name: 'JI_imagem2',
+          file: 'JI_imagem2.png',
         },
         {
-          name: 'JI_Imagem3',
-          file: 'JI_Imagem3.png',
+          name: 'JI_imagem3',
+          file: 'JI_imagem3.png',
         },
         {
-          name: 'JI_Imagem4',
-          file: 'JI_Imagem4.png',
+          name: 'JI_imagem4',
+          file: 'JI_imagem4.png',
         },
         {
-          name: 'JI_Imagem5',
-          file: 'JI_Imagem5.png',
+          name: 'JI_imagem5',
+          file: 'JI_imagem5.png',
         },
       ],
     },
@@ -3292,28 +3292,28 @@ const data = [
     imagens: {
       create: [
         {
-          name: 'IA_Imagem1',
-          file: 'IA_Imagem1.png',
+          name: 'IA_imagem1',
+          file: 'IA_imagem1.png',
         },
         {
-          name: 'IA_Imagem2',
-          file: 'IA_Imagem2.png',
+          name: 'IA_imagem2',
+          file: 'IA_imagem2.png',
         },
         {
-          name: 'IA_Imagem3',
-          file: 'IA_Imagem3.png',
+          name: 'IA_imagem3',
+          file: 'IA_imagem3.png',
         },
         {
-          name: 'IA_Imagem4',
-          file: 'IA_Imagem4.png',
+          name: 'IA_imagem4',
+          file: 'IA_imagem4.png',
         },
         {
-          name: 'IA_Imagem5',
-          file: 'IA_Imagem5.png',
+          name: 'IA_imagem5',
+          file: 'IA_imagem5.png',
         },
         {
-          name: 'IA_Imagem6',
-          file: 'IA_Imagem6.png',
+          name: 'IA_imagem6',
+          file: 'IA_imagem6.png',
         },
       ],
     },
@@ -3343,24 +3343,24 @@ const data = [
     imagens: {
       create: [
         {
-          name: 'Ravello_Imagem1',
-          file: 'Ravello_Imagem1.png',
+          name: 'ravello_imagem1',
+          file: 'ravello_imagem1.png',
         },
         {
-          name: 'Ravello_Imagem2',
-          file: 'Ravello_Imagem2.png',
+          name: 'ravello_imagem2',
+          file: 'ravello_imagem2.png',
         },
         {
-          name: 'Ravello_Imagem3',
-          file: 'Ravello_Imagem3.png',
+          name: 'ravello_imagem3',
+          file: 'ravello_imagem3.png',
         },
         {
-          name: 'Ravello_Imagem4',
-          file: 'Ravello_Imagem4.png',
+          name: 'ravello_imagem4',
+          file: 'ravello_imagem4.png',
         },
         {
-          name: 'Ravello_Imagem5',
-          file: 'Ravello_Imagem5.png',
+          name: 'ravello_imagem5',
+          file: 'ravello_imagem5.png',
         },
       ],
     },
@@ -3391,56 +3391,56 @@ const data = [
     imagens: {
       create: [
         {
-          name: 'KEB_Imagem1',
-          file: 'KEB_Imagem1.png',
+          name: 'KEB_imagem1',
+          file: 'KEB_imagem1.png',
         },
         {
-          name: 'KEB_Imagem2',
-          file: 'KEB_Imagem2.png',
+          name: 'KEB_imagem2',
+          file: 'KEB_imagem2.png',
         },
         {
-          name: 'KEB_Imagem3',
-          file: 'KEB_Imagem3.png',
+          name: 'KEB_imagem3',
+          file: 'KEB_imagem3.png',
         },
         {
-          name: 'KEB_Imagem4',
-          file: 'KEB_Imagem4.png',
+          name: 'KEB_imagem4',
+          file: 'KEB_imagem4.png',
         },
         {
-          name: 'KEB_Imagem5',
-          file: 'KEB_Imagem5.png',
+          name: 'KEB_imagem5',
+          file: 'KEB_imagem5.png',
         },
         {
-          name: 'KEB_Imagem6',
-          file: 'KEB_Imagem6.png',
+          name: 'KEB_imagem6',
+          file: 'KEB_imagem6.png',
         },
         {
-          name: 'KEB_Imagem7',
-          file: 'KEB_Imagem7.png',
+          name: 'KEB_imagem7',
+          file: 'KEB_imagem7.png',
         },
         {
-          name: 'KEB_Imagem8',
-          file: 'KEB_Imagem8.png',
+          name: 'KEB_imagem8',
+          file: 'KEB_imagem8.png',
         },
         {
-          name: 'KEB_Imagem9',
-          file: 'KEB_Imagem9.png',
+          name: 'KEB_imagem9',
+          file: 'KEB_imagem9.png',
         },
         {
-          name: 'KEB_Imagem10',
-          file: 'KEB_Imagem10.png',
+          name: 'KEB_imagem10',
+          file: 'KEB_imagem10.png',
         },
         {
-          name: 'KEB_Imagem12',
-          file: 'KEB_Imagem12.png',
+          name: 'KEB_imagem12',
+          file: 'KEB_imagem12.png',
         },
         {
-          name: 'KEB_Imagem13',
-          file: 'KEB_Imagem13.png',
+          name: 'KEB_imagem13',
+          file: 'KEB_imagem13.png',
         },
         {
-          name: 'KEB_Imagem14',
-          file: 'KEB_Imagem14.png',
+          name: 'KEB_imagem14',
+          file: 'KEB_imagem14.png',
         },
       ],
     },
@@ -3543,60 +3543,60 @@ const data = [
     imagens: {
       create: [
         {
-          name: 'FA_Imagem1',
-          file: 'FA_Imagem1.jpg',
+          name: 'FA_imagem1',
+          file: 'FA_imagem1.jpg',
         },
         {
-          name: 'FA_Imagem2',
-          file: 'FA_Imagem2.jpg',
+          name: 'FA_imagem2',
+          file: 'FA_imagem2.jpg',
         },
         {
-          name: 'FA_Imagem3',
-          file: 'FA_Imagem3.jpg',
+          name: 'FA_imagem3',
+          file: 'FA_imagem3.jpg',
         },
         {
-          name: 'FA_Imagem4',
-          file: 'FA_Imagem4.jpg',
+          name: 'FA_imagem4',
+          file: 'FA_imagem4.jpg',
         },
         {
-          name: 'FA_Imagem5',
-          file: 'FA_Imagem5.jpg',
+          name: 'FA_imagem5',
+          file: 'FA_imagem5.jpg',
         },
         {
-          name: 'FA_Imagem6',
-          file: 'FA_Imagem6.jpg',
+          name: 'FA_imagem6',
+          file: 'FA_imagem6.jpg',
         },
         {
-          name: 'FA_Imagem7',
-          file: 'FA_Imagem7.jpg',
+          name: 'FA_imagem7',
+          file: 'FA_imagem7.jpg',
         },
         {
-          name: 'FA_Imagem8',
-          file: 'FA_Imagem8.jpg',
+          name: 'FA_imagem8',
+          file: 'FA_imagem8.jpg',
         },
         {
-          name: 'FA_Imagem9',
-          file: 'FA_Imagem9.jpg',
+          name: 'FA_imagem9',
+          file: 'FA_imagem9.jpg',
         },
         {
-          name: 'FA_Imagem10',
-          file: 'FA_Imagem10.jpg',
+          name: 'FA_imagem10',
+          file: 'FA_imagem10.jpg',
         },
         {
-          name: 'FA_Imagem11',
-          file: 'FA_Imagem11.jpg',
+          name: 'FA_imagem11',
+          file: 'FA_imagem11.jpg',
         },
         {
-          name: 'FA_Imagem12',
-          file: 'FA_Imagem12.jpg',
+          name: 'FA_imagem12',
+          file: 'FA_imagem12.jpg',
         },
         {
-          name: 'FA_Imagem13',
-          file: 'FA_Imagem13.jpg',
+          name: 'FA_imagem13',
+          file: 'FA_imagem13.jpg',
         },
         {
-          name: 'FA_Imagem14',
-          file: 'FA_Imagem14.jpg',
+          name: 'FA_imagem14',
+          file: 'FA_imagem14.jpg',
         },
       ],
     },
@@ -3626,96 +3626,96 @@ const data = [
     imagens: {
       create: [
         {
-          name: 'blanc_Imagem1',
-          file: 'blanc_Imagem1.png',
+          name: 'blanc_imagem1',
+          file: 'blanc_imagem1.png',
         },
         {
-          name: 'blanc_Imagem2',
-          file: 'blanc_Imagem2.png',
+          name: 'blanc_imagem2',
+          file: 'blanc_imagem2.png',
         },
         {
-          name: 'blanc_Imagem3',
-          file: 'blanc_Imagem3.png',
+          name: 'blanc_imagem3',
+          file: 'blanc_imagem3.png',
         },
         {
-          name: 'blanc_Imagem4',
-          file: 'blanc_Imagem4.png',
+          name: 'blanc_imagem4',
+          file: 'blanc_imagem4.png',
         },
         {
-          name: 'blanc_Imagem5',
-          file: 'blanc_Imagem5.png',
+          name: 'blanc_imagem5',
+          file: 'blanc_imagem5.png',
         },
         {
-          name: 'blanc_Imagem6',
-          file: 'blanc_Imagem6.png',
+          name: 'blanc_imagem6',
+          file: 'blanc_imagem6.png',
         },
         {
-          name: 'blanc_Imagem7',
-          file: 'blanc_Imagem7.png',
+          name: 'blanc_imagem7',
+          file: 'blanc_imagem7.png',
         },
         {
-          name: 'blanc_Imagem8',
-          file: 'blanc_Imagem8.png',
+          name: 'blanc_imagem8',
+          file: 'blanc_imagem8.png',
         },
         {
-          name: 'blanc_Imagem9',
-          file: 'blanc_Imagem9.png',
+          name: 'blanc_imagem9',
+          file: 'blanc_imagem9.png',
         },
         {
-          name: 'blanc_Imagem10',
-          file: 'blanc_Imagem10.png',
+          name: 'blanc_imagem10',
+          file: 'blanc_imagem10.png',
         },
         {
-          name: 'blanc_Imagem11',
-          file: 'blanc_Imagem12.png',
+          name: 'blanc_imagem11',
+          file: 'blanc_imagem12.png',
         },
         {
-          name: 'blanc_Imagem13',
-          file: 'blanc_Imagem13.png',
+          name: 'blanc_imagem13',
+          file: 'blanc_imagem13.png',
         },
         {
-          name: 'blanc_Imagem14',
-          file: 'blanc_Imagem14.png',
+          name: 'blanc_imagem14',
+          file: 'blanc_imagem14.png',
         },
         {
-          name: 'blanc_Imagem15',
-          file: 'blanc_Imagem15.png',
+          name: 'blanc_imagem15',
+          file: 'blanc_imagem15.png',
         },
         {
-          name: 'blanc_Imagem16',
-          file: 'blanc_Imagem16.png',
+          name: 'blanc_imagem16',
+          file: 'blanc_imagem16.png',
         },
         {
-          name: 'blanc_Imagem17',
-          file: 'blanc_Imagem17.png',
+          name: 'blanc_imagem17',
+          file: 'blanc_imagem17.png',
         },
         {
-          name: 'blanc_Imagem18',
-          file: 'blanc_Imagem18.png',
+          name: 'blanc_imagem18',
+          file: 'blanc_imagem18.png',
         },
         {
-          name: 'blanc_Imagem19',
-          file: 'blanc_Imagem19.png',
+          name: 'blanc_imagem19',
+          file: 'blanc_imagem19.png',
         },
         {
-          name: 'blanc_Imagem20',
-          file: 'blanc_Imagem20.png',
+          name: 'blanc_imagem20',
+          file: 'blanc_imagem20.png',
         },
         {
-          name: 'blanc_Imagem21',
-          file: 'blanc_Imagem21.png',
+          name: 'blanc_imagem21',
+          file: 'blanc_imagem21.png',
         },
         {
-          name: 'blanc_Imagem22',
-          file: 'blanc_Imagem22.png',
+          name: 'blanc_imagem22',
+          file: 'blanc_imagem22.png',
         },
         {
-          name: 'blanc_Imagem23',
-          file: 'blanc_Imagem23.png',
+          name: 'blanc_imagem23',
+          file: 'blanc_imagem23.png',
         },
         {
-          name: 'blanc_Imagem24',
-          file: 'blanc_Imagem24.png',
+          name: 'blanc_imagem24',
+          file: 'blanc_imagem24.png',
         },
       ],
     },
@@ -3930,8 +3930,8 @@ const data = [
     imagens: {
       create: [
         {
-          name: 'EM_Imagem1',
-          file: 'EM_Imagem1.jpg',
+          name: 'EM_imagem1',
+          file: 'EM_imagem1.jpg',
         },
       ],
     },
