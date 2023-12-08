@@ -1,27 +1,16 @@
 <script setup>
-  import { defineComponent } from 'vue'
-  import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
-  import 'vue3-carousel/dist/carousel.css'
   import 'viewerjs/dist/viewer.css'
   import { directive as viewer } from 'v-viewer'
-
-  defineComponent({
-    components: {
-      Carousel,
-      Slide,
-      Pagination,
-      Navigation,
-    },
-  })
-  import 'viewerjs/dist/viewer.css'
-
+  import CustomCarousel from '../../components/CustomCarousel.vue'
+  
   const vViewer = viewer({
     debug: false,
   })
-
+  
   const route = useRoute()
   const { data: projeto, pending, error } = await useFetch(() => `/api/projetos/${route.params.id}`)
 </script>
+
 <template>
   <p v-if="error">Erro ao tentar acessar o projeto 💔</p>
   <NuxtLayout
@@ -30,34 +19,21 @@
   >
     <template #main-content>
       <ButtonGoBack />
-      <div
-        class="images"
-        v-viewer="{ movable: true, rotatable: false, scalable: false }"
-      >
-        <div class="container mx-auto my-8">
-          <div class="content-wrapper flex flex-col items-center">
-            <Carousel class="flex-col bg-transparent rounded-box items-center">
-              <Slide
-                v-for="slide in projeto.imagens"
-                :key="slide"
-              >
-                <NuxtImg
-                  :src="`${slide.file}`"
-                  :alt="`${slide.name}`"
-                  class="carousel__item rounded-lg cursor-pointer"
-                />
-              </Slide>
-
-              <template #addons>
-                <Navigation v-if="projeto?.imagens.length > 1" />
-                <Pagination />
-              </template>
-            </Carousel>
-          </div>
-        </div>
-      </div>
       <div class="container mx-auto my-8">
-        <div class="content-wrapper flex flex-col items-center">
+        <div
+          class="carousel-project-page flex flex-col items-center"
+          v-viewer="{ movable: true, rotatable: false, scalable: false }"
+        >
+          <CustomCarousel
+            :arrayImages="projeto?.imagens"
+            custom-classes="flex flex-col bg-transparent rounded-box items-center"
+          />
+        </div>
+        
+      </div>
+
+      <div class="container mx-auto my-8">
+        <div class="flex flex-col items-center">
           <div class="flex items-center py-4">
             <h3 class="self-baseline capitalize">{{ projeto?.nome_oficial }}</h3>
             <div
@@ -136,13 +112,5 @@
 
   p:not(:first-of-type) {
     @apply mb-2;
-  }
-
-  .carousel {
-    @apply max-w-[80%] md:max-w-[60%];
-  }
-
-  .carousel__item {
-    @apply min-h-[224px] max-h-[430px] w-full max-w-[580px] bg-transparent rounded-lg;
   }
 </style>

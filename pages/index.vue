@@ -1,4 +1,7 @@
 <script setup>
+  import CustomCarousel from '../components/CustomCarousel.vue'
+  import { favImages } from '../constants/data-images'
+  
   const { data: projectsData, pending, error } = await useFetch(() => '/api/projetos')
 
   const mainProjects = computed(() => {
@@ -18,14 +21,8 @@
   <NuxtLayout name="basic">
     <template #main-content>
       <div class="presentation-wrapper">
-        <div class="">
-          <img
-            src="../assets/images/cityvogue_img1.jpg"
-            alt="Edificio Residencial City Vogue"
-            class="w-full h-full max-w-full rounded-lg"
-          />
-        </div>
-
+        <CustomCarousel :array-images="favImages" :auto-play="3000" :has-navigation="false" :has-pagination="false" />
+        
         <div
           v-if="mainProjects.length > 0"
           class="welcome-content"
