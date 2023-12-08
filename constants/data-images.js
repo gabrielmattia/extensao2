@@ -1,26 +1,17 @@
 export const favImages = [
   {
     name: 'cityvogue_img1',
-    file: 'cityvogue_img1.jpg'
-  },
-  {
-    name: 'cityvogue_img5',
-    file: 'cityvogue_img5.jpg'
-  },
-  {
-    name: 'cityvogue_img8',
-    file: 'cityvogue_img8.jpg'
+    file: 'atlantica_img1.jpeg'
+    //1500px x 1256px
   },
   {
     name: 'COHAUT002_img6',
     file: 'COHAUT002_img6.jpg'
+    //2249px x 2026px
   },
-  {
-    name: 'Esther_img1',
-    file: 'Esther_img1.jpg'
-  },
-  {
-    name: 'WMultiusoImagem9',
-    file: 'WMultiusoImagem9.png'
-  },
+  // {
+  //   name: 'Esther_img1',
+  //   file: 'Esther_img1.jpg'
+  //   //1240px x 1771px
+  // },
 ]

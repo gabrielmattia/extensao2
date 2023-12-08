@@ -117,6 +117,18 @@ span {
 }
 
 /**Carousel Styles**/
+.presentation-wrapper .carousel,
+.presentation-wrapper .carousel .carousel__viewport,
+.presentation-wrapper .carousel .carousel__track,
+.presentation-wrapper .carousel.carousel__slide,
+.presentation-wrapper .carousel .carousel__item {
+  @apply w-full
+    sm:max-h-custom-home-sm
+    md:max-h-custom-home-md
+    xl:max-h-custom-home-xl
+    sm:max-w-full;
+}
+
 .carousel__pagination-button {
   @apply bg-white;
 }

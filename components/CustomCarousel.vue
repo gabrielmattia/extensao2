@@ -31,12 +31,17 @@
     customClasses: {
       type: String,
     },
+    wrapAround: {
+      type: Boolean,
+      default: false
+    }
   })
 </script>
 <template>
   <Carousel
     :autoplay="autoPlay"
     :class="customClasses"
+    :wrap-around="wrapAround"
   >
     <Slide
       v-for="slide in arrayImages"

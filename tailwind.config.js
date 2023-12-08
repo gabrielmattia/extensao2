@@ -46,6 +46,11 @@ module.exports = {
         'custom-5': 'repeat(5, 280px)',
         'custom--auto-fit': 'repeat(auto-fit, 280px)',
       },
+      maxHeight: {
+        'custom-home-sm': '480px',
+        'custom-home-md': '570px',
+        'custom-home-xl': '680px'
+      }
     },
   },
   plugins: [require('daisyui')],
